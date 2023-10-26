@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <servlet>
+        <servlet-name>signedUpServlet</servlet-name>
+        <servlet-class>hit.jiraapp.SignedUpServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>signedUpServlet</servlet-name>
+        <url-pattern>/SignedUp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>homeServlet</servlet-name>
+        <servlet-class>hit.jiraapp.HomeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>homeServlet</servlet-name>
+        <url-pattern>/HomeServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addProjectServlet</servlet-name>
+        <servlet-class>hit.jiraapp.AddProjectServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addProjectServlet</servlet-name>
+        <url-pattern>/AddProjectServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>removeProjectServlet</servlet-name>
+        <servlet-class>hit.jiraapp.RemoveProjectServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>removeProjectServlet</servlet-name>
+        <url-pattern>/RemoveProjectServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>addIssuesServlet</servlet-name>
+        <servlet-class>hit.jiraapp.AddIssuesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addIssuesServlet</servlet-name>
+        <url-pattern>/AddIssueServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>removeIssueServlet</servlet-name>
+        <servlet-class>hit.jiraapp.RemoveProjectServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>removeIssueServlet</servlet-name>
+        <url-pattern>/RemoveIssueServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>
